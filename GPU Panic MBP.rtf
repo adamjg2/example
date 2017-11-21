@@ -1,0 +1,197 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww16360\viewh12420\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0 \kerning1\expnd3\expndtw15
+Anonymous UUID:       933CDCA8-149B-1B03-88BD-EF297449C1A2\
+\
+Mon Nov  6 16:35:13 2017\
+panic(cpu 3 caller 0xffffff7f8779bf7c): "GPU Panic: [<None>] 3 3 7f 0 0 0 0 3 : NVRM[0/1:0:0]: Read Error 0x00000100: CFG 0xffffffff 0xffffffff 0xffffffff, BAR0 0xd2000000 0xffffff812139b000 0x0a5480a2, D0, P2/4\\n"@/SourceCache/AppleGraphicsControl/AppleGraphicsControl-3.6.22/src/AppleMuxControl/kext/GPUPanic.cpp:127\
+Backtrace (CPU 3), Frame : Return Address\
+0xffffff810fffb6b0 : 0xffffff8005423139 \
+0xffffff810fffb730 : 0xffffff7f8779bf7c \
+0xffffff810fffb800 : 0xffffff7f85e28f1b \
+0xffffff810fffb8c0 : 0xffffff7f85ef250a \
+0xffffff810fffb900 : 0xffffff7f85ef257a \
+0xffffff810fffb970 : 0xffffff7f86171056 \
+0xffffff810fffbaa0 : 0xffffff7f85f15ba9 \
+0xffffff810fffbac0 : 0xffffff7f85e2f96d \
+0xffffff810fffbb70 : 0xffffff7f85e2d478 \
+0xffffff810fffbd70 : 0xffffff7f85e2e518 \
+0xffffff810fffbe50 : 0xffffff7f85ddb2de \
+0xffffff810fffbeb0 : 0xffffff7f8776d4e6 \
+0xffffff810fffbf00 : 0xffffff7f8776c20e \
+0xffffff810fffbf20 : 0xffffff800544a57a \
+0xffffff810fffbfb0 : 0xffffff80054d7c67 \
+      Kernel Extensions in backtrace:\
+         com.apple.driver.AppleMuxControl(3.6.22)[32862231-50BC-3AF6-87A2-703321AE4F90]@0xffffff7f8778d000->0xffffff7f877a0fff\
+            dependency: com.apple.driver.AppleGraphicsControl(3.6.22)[AA46D551-BE0F-33DA-93A3-8F46197BB36F]@0xffffff7f87785000\
+            dependency: com.apple.iokit.IOACPIFamily(1.4)[045D5D6F-AD1E-36DB-A249-A346E2B48E54]@0xffffff7f85d2e000\
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[8D53E053-6E9C-3315-BCF6-2AF77E05C0DF]@0xffffff7f85ac1000\
+            dependency: com.apple.iokit.IOGraphicsFamily(2.4.1)[44D1D375-32BF-3BD0-BC6F-9372C142BCB2]@0xffffff7f85d86000\
+            dependency: com.apple.driver.AppleBacklightExpert(1.0.4)[80899285-3952-30DA-A0F9-357C51E104CF]@0xffffff7f87788000\
+         com.apple.nvidia.classic.NVDAResmanTesla(8.2.4)[D61B2BB9-4289-318D-9197-5E1E13B1FF32]@0xffffff7f85dd9000->0xffffff7f86041fff\
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[8D53E053-6E9C-3315-BCF6-2AF77E05C0DF]@0xffffff7f85ac1000\
+            dependency: com.apple.iokit.IONDRVSupport(2.4.1)[A356902E-CE68-304B-83FC-8DB66AE572C0]@0xffffff7f85dc9000\
+            dependency: com.apple.iokit.IOGraphicsFamily(2.4.1)[44D1D375-32BF-3BD0-BC6F-9372C142BCB2]@0xffffff7f85d86000\
+         com.apple.nvidia.classic.NVDANV50HalTesla(8.2.4)[B0E6AAA7-E970-3D81-8B43-145D56A3A4AC]@0xffffff7f8604c000->0xffffff7f862f5fff\
+            dependency: com.apple.nvidia.classic.NVDAResmanTesla(8.2.4)[D61B2BB9-4289-318D-9197-5E1E13B1FF32]@0xffffff7f85dd9000\
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[8D53E053-6E9C-3315-BCF6-2AF77E05C0DF]@0xffffff7f85ac1000\
+         com.apple.driver.AGPM(100.14.34)[49E7348D-2B97-3A14-8D15-601F48B87743]@0xffffff7f8776a000->0xffffff7f8777cfff\
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[8D53E053-6E9C-3315-BCF6-2AF77E05C0DF]@0xffffff7f85ac1000\
+            dependency: com.apple.driver.IOPlatformPluginFamily(5.7.1d6)[E1E9E4C2-AAA8-346A-A4CF-FC718BCE6D47]@0xffffff7f8681a000\
+            dependency: com.apple.iokit.IONDRVSupport(2.4.1)[A356902E-CE68-304B-83FC-8DB66AE572C0]@0xffffff7f85dc9000\
+            dependency: com.apple.iokit.IOGraphicsFamily(2.4.1)[44D1D375-32BF-3BD0-BC6F-9372C142BCB2]@0xffffff7f85d86000\
+            dependency: com.apple.AppleGraphicsDeviceControl(3.6.22)[91D61DEC-2946-3790-8134-B808C016C4C9]@0xffffff7f87764000\
+\
+BSD process name corresponding to current thread: kernel_task\
+\
+Mac OS version:\
+13F1911\
+\
+Kernel version:\
+Darwin Kernel Version 13.4.0: Mon Jan 11 18:17:34 PST 2016; root:xnu-2422.115.15~1/RELEASE_X86_64\
+Kernel UUID: 8926E512-6714-34FC-B27C-6AE90EB51D5E\
+Kernel slide:     0x0000000005200000\
+Kernel text base: 0xffffff8005400000\
+System model name: MacBookPro6,2 (Mac-F22586C8)\
+\
+System uptime in nanoseconds: 4190981852097\
+last loaded kext at 266920841510: com.apple.filesystems.msdosfs	1.9 (addr 0xffffff7f878a5000, size 65536)\
+last unloaded kext at 328076925946: com.apple.filesystems.msdosfs	1.9 (addr 0xffffff7f878a5000, size 57344)\
+loaded kexts:\
+com.apple.driver.AudioAUUC	1.60\
+com.apple.driver.AppleHWSensor	1.9.5d0\
+com.apple.driver.AGPM	100.14.34\
+com.apple.filesystems.autofs	3.0\
+com.apple.iokit.IOBluetoothSerialManager	4.2.7f5\
+com.apple.driver.AppleMikeyHIDDriver	124\
+com.apple.driver.AppleMikeyDriver	2.6.3f7\
+com.apple.driver.AppleUpstreamUserClient	3.5.13\
+com.apple.driver.AppleHDA	2.6.3f7\
+com.apple.GeForceTesla	8.2.4\
+com.apple.iokit.IOUserEthernet	1.0.0d1\
+com.apple.driver.AppleMCCSControl	1.2.5\
+com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport	4.2.7f5\
+com.apple.Dont_Steal_Mac_OS_X	7.0.0\
+com.apple.driver.AppleHWAccess	1\
+com.apple.driver.AppleMuxControl	3.6.22\
+com.apple.driver.ACPI_SMC_PlatformPlugin	1.0.0\
+com.apple.driver.AppleIntelHDGraphics	8.2.4\
+com.apple.driver.AppleIntelHDGraphicsFB	8.2.4\
+com.apple.driver.AppleSMCPDRC	1.0.0\
+com.apple.driver.AppleSMCLMU	2.0.4d1\
+com.apple.driver.AppleLPC	1.7.0\
+com.apple.driver.SMCMotionSensor	3.0.4d1\
+com.apple.driver.AppleUSBTCButtons	240.2\
+com.apple.driver.AppleUSBTCKeyboard	240.2\
+com.apple.driver.AppleUSBCardReader	3.4.1\
+com.apple.driver.AppleIRController	325.7\
+com.apple.iokit.SCSITaskUserClient	3.6.7\
+com.apple.driver.XsanFilter	404\
+com.apple.iokit.IOAHCIBlockStorage	2.6.0\
+com.apple.AppleFSCompression.AppleFSCompressionTypeDataless	1.0.0d1\
+com.apple.AppleFSCompression.AppleFSCompressionTypeLZVN	1.0.0d1\
+com.apple.AppleFSCompression.AppleFSCompressionTypeZlib	1.0.0d1\
+com.apple.BootCache	35\
+com.apple.driver.AppleFWOHCI	5.0.2\
+com.apple.driver.AppleUSBHub	683.4.0\
+com.apple.driver.AirPort.Brcm4331	700.20.22\
+com.apple.iokit.AppleBCM5701Ethernet	3.8.1b2\
+com.apple.driver.AppleAHCIPort	3.0.5\
+com.apple.driver.AppleUSBEHCI	660.4.0\
+com.apple.driver.AppleSmartBatteryManager	161.0.0\
+com.apple.driver.AppleRTC	2.0\
+com.apple.driver.AppleACPIButtons	2.0\
+com.apple.driver.AppleHPET	1.8\
+com.apple.driver.AppleSMBIOS	2.1\
+com.apple.driver.AppleACPIEC	2.0\
+com.apple.driver.AppleAPIC	1.7\
+com.apple.driver.AppleIntelCPUPowerManagementClient	217.92.1\
+com.apple.nke.applicationfirewall	153\
+com.apple.security.quarantine	3\
+com.apple.driver.AppleIntelCPUPowerManagement	217.92.1\
+com.apple.AppleGraphicsDeviceControl	3.6.22\
+com.apple.kext.triggers	1.0\
+com.apple.iokit.IOSerialFamily	10.0.7\
+com.apple.driver.DspFuncLib	2.6.3f7\
+com.apple.vecLib.kext	1.0.0\
+com.apple.iokit.IOAudioFamily	1.9.7fc2\
+com.apple.kext.OSvKernDSPLib	1.14\
+com.apple.nvidia.classic.NVDANV50HalTesla	8.2.4\
+com.apple.nvidia.classic.NVDAResmanTesla	8.2.4\
+com.apple.iokit.IOSurface	91.3\
+com.apple.iokit.IOBluetoothFamily	4.2.7f5\
+com.apple.driver.AppleSMBusController	1.0.12d1\
+com.apple.iokit.IOFireWireIP	2.2.6\
+com.apple.iokit.IOBluetoothHostControllerUSBTransport	4.2.7f5\
+com.apple.driver.AppleHDAController	2.6.3f7\
+com.apple.iokit.IOHDAFamily	2.6.3f7\
+com.apple.driver.AppleBacklightExpert	1.0.4\
+com.apple.driver.AppleGraphicsControl	3.6.22\
+com.apple.driver.IOPlatformPluginLegacy	1.0.0\
+com.apple.driver.AppleSMBusPCI	1.0.12d1\
+com.apple.iokit.IONDRVSupport	2.4.1\
+com.apple.iokit.IOGraphicsFamily	2.4.1\
+com.apple.driver.IOPlatformPluginFamily	5.7.1d6\
+com.apple.driver.AppleSMC	3.1.8\
+com.apple.driver.AppleUSBMultitouch	240.10\
+com.apple.iokit.IOSCSIBlockCommandsDevice	3.6.7\
+com.apple.iokit.IOUSBMassStorageClass	3.6.0\
+com.apple.iokit.IOUSBHIDDriver	660.4.0\
+com.apple.driver.AppleUSBMergeNub	650.4.0\
+com.apple.driver.AppleUSBComposite	656.4.1\
+com.apple.iokit.IOSCSIMultimediaCommandsDevice	3.6.7\
+com.apple.iokit.IOBDStorageFamily	1.7\
+com.apple.iokit.IODVDStorageFamily	1.7.1\
+com.apple.iokit.IOCDStorageFamily	1.7.1\
+com.apple.iokit.IOAHCISerialATAPI	2.6.1\
+com.apple.iokit.IOSCSIArchitectureModelFamily	3.6.7\
+com.apple.iokit.IOFireWireFamily	4.5.5\
+com.apple.iokit.IO80211Family	640.36\
+com.apple.iokit.IOUSBUserClient	660.4.2\
+com.apple.iokit.IOEthernetAVBController	1.0.3b4\
+com.apple.driver.mDNSOffloadUserClient	1.0.1b5\
+com.apple.iokit.IONetworkingFamily	3.2\
+com.apple.iokit.IOAHCIFamily	2.6.5\
+com.apple.iokit.IOUSBFamily	686.4.1\
+com.apple.driver.AppleEFINVRAM	2.0\
+com.apple.driver.AppleEFIRuntime	2.0\
+com.apple.iokit.IOHIDFamily	2.0.0\
+com.apple.iokit.IOSMBusFamily	1.1\
+com.apple.security.sandbox	278.11.2\
+com.apple.kext.AppleMatch	1.0.0d1\
+com.apple.security.TMSafetyNet	7\
+com.apple.driver.AppleKeyStore	2\
+com.apple.driver.DiskImages	373\
+com.apple.iokit.IOStorageFamily	1.9\
+com.apple.iokit.IOReportFamily	23\
+com.apple.driver.AppleFDEKeyStore	28.30\
+com.apple.driver.AppleACPIPlatform	2.0\
+com.apple.iokit.IOPCIFamily	2.9\
+com.apple.iokit.IOACPIFamily	1.4\
+com.apple.kec.corecrypto	1.0\
+com.apple.kec.pthread	1\
+Model: MacBookPro6,2, BootROM MBP61.0057.B11, 2 processors, Intel Core i5, 2.4 GHz, 8 GB, SMC 1.58f17\
+Graphics: Intel HD Graphics, Intel HD Graphics, Built-In, 288 MB\
+Graphics: NVIDIA GeForce GT 330M, NVIDIA GeForce GT 330M, PCIe, 256 MB\
+Memory Module: BANK 0/DIMM0, 4 GB, DDR3, 1067 MHz, 0x859B, 0x435434473353313036374D2E4D3136464D44\
+Memory Module: BANK 1/DIMM0, 4 GB, DDR3, 1067 MHz, 0x859B, 0x435434473353313036374D2E4D3136464D44\
+AirPort: spairport_wireless_card_type_airport_extreme (0x14E4, 0x93), Broadcom BCM43xx 1.0 (5.106.98.100.22)\
+Bluetooth: Version 5.2.7f4 15858, 3 services, 23 devices, 1 incoming serial ports\
+Network Service: Wi-Fi, AirPort, en1\
+Serial ATA Device: HGST HTS721010A9E630, 1 TB\
+Serial ATA Device: MATSHITADVD-R   UJ-898\
+USB Device: Hub\
+USB Device: BRCM2070 Hub\
+USB Device: Bluetooth USB Host Controller\
+USB Device: Apple Internal Keyboard / Trackpad\
+USB Device: Internal Memory Card Reader\
+USB Device: Hub\
+USB Device: IR Receiver\
+USB Device: Built-in iSight\
+Thunderbolt Bus: \
+}
